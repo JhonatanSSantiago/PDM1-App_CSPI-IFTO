@@ -13,16 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:src="@mipmap/ic_launcher">
+        android:src="@drawable/ifto">
     </ImageView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sistmemas para Internet"
+        android:text="@string/textVie_Curso"
         android:gravity="center"
         android:layout_margin="10dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
     <TextView
         android:layout_width="match_parent"
