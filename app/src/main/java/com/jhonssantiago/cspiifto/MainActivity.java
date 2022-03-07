@@ -22,9 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("IFTO");
 
 
     }
@@ -41,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.primeiro_p:
                 it = new Intent(getApplicationContext(), PrimeiroPeriodoActivity.class);
-                it.putExtra("dados", "Java");
                 startActivity(it);
                 return true;
 

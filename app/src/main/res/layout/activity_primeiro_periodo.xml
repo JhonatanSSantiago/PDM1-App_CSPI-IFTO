@@ -5,12 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="10dp"
     tools:context=".PrimeiroPeriodoActivity">
-
+    <include layout="@layout/my_toolbar"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:id="@+id/textView_java"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="1 Periodo" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:dividerHeight="3dp"
+        android:divider="@color/black"
+        android:id="@+id/listView_itens" />
 
 </LinearLayout>
