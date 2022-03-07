@@ -48,7 +48,6 @@ public class SegundoPeriodoActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Intent it = null;
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
