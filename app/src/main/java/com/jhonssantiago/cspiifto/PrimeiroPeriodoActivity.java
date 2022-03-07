@@ -1,8 +1,12 @@
 package com.jhonssantiago.cspiifto;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,6 +22,9 @@ public class PrimeiroPeriodoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primeiro_periodo);
 
+        Toolbar toolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         listView_itens = findViewById(R.id.listView_itens);
         criarLista();
         meuAdapter = new MyAdapter(getApplicationContext(), disciplinas);
@@ -43,4 +50,16 @@ public class PrimeiroPeriodoActivity extends AppCompatActivity {
         disciplinas.add(d6);
 
     }
-}
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent it = null;
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        } //switch
+
+    }}

@@ -47,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(it);
                 return true;
 
+            case R.id.terceiro_p:
+                it = new Intent(getApplicationContext(), TerceiroPeriodoActivity.class);
+                startActivity(it);
+                return true;
+
             case android.R.id.home:
                 finish();
                 return true;

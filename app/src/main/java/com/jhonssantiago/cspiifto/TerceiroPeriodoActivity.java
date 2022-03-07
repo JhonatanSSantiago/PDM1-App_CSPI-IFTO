@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class SegundoPeriodoActivity extends AppCompatActivity {
+public class TerceiroPeriodoActivity extends AppCompatActivity {
     private ListView listView_itens;
     private MyAdapter meuAdapter;
     private ArrayList<Disciplina> disciplinas;
@@ -19,7 +19,7 @@ public class SegundoPeriodoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_segundo_periodo);
+        setContentView(R.layout.activity_terceiro_periodo);
 
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
@@ -32,17 +32,19 @@ public class SegundoPeriodoActivity extends AppCompatActivity {
 
     private void criarLista() {
         disciplinas = new ArrayList<>();
-        Disciplina d1 = new Disciplina("Fundamentos e Projeto de Banco de Dados", "72 horas");
-        Disciplina d2 = new Disciplina("Análise de Sistemas", "72 horas");
-        Disciplina d3 = new Disciplina("Introdução à Programação", "80 horas");
-        Disciplina d4 = new Disciplina("Programação Orientada a Objetos", "72 horas");
-        Disciplina d5 = new Disciplina("Programação Básica para Web", "72 horas");
+        Disciplina d1 = new Disciplina("Introdução à Conectividade", "72 horas");
+        Disciplina d2 = new Disciplina("Gerenciamento de Dados para Web", "72 horas");
+        Disciplina d3 = new Disciplina("Programação para Banco de Dados", "72 horas");
+        Disciplina d4 = new Disciplina("Administração de Sistemas Proprietários", "36 horas");
+        Disciplina d5 = new Disciplina("Programação para Web Designers", "36 horas");
+        Disciplina d6 = new Disciplina("Programação para Web I", "72 horas");
 
         disciplinas.add(d1);
         disciplinas.add(d2);
         disciplinas.add(d3);
         disciplinas.add(d4);
         disciplinas.add(d5);
+        disciplinas.add(d6);
 
     }
 

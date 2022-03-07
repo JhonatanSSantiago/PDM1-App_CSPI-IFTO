@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSPIIFTO">
         <activity
+            android:name=".TerceiroPeriodoActivity"
+            android:exported="false" />
+        <activity
             android:name=".SegundoPeriodoActivity"
             android:exported="false" />
         <activity

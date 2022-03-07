@@ -12,6 +12,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:src="@mipmap/ic_launcher">
     </ImageView>
 
@@ -20,12 +21,14 @@
         android:layout_height="wrap_content"
         android:text="Sistmemas para Internet"
         android:gravity="center"
+        android:layout_margin="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_margin="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:text="@string/textView_Descricao"/>
 
