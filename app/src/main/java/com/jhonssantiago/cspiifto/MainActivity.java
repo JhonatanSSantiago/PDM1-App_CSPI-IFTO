@@ -57,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(it);
                 return true;
 
+            case R.id.quinto_p:
+                it = new Intent(getApplicationContext(), QuintoPeriodoActivity.class);
+                startActivity(it);
+                return true;
+
             case android.R.id.home:
                 finish();
                 return true;
